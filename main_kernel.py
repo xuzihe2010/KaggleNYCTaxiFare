@@ -51,7 +51,7 @@ print("Total number of params:", total)
 
 start = time.time()
 # Define sklearn GradientBoosting regressor and Randomized search cv
-xgbr = xgb.XGBRegressor(early_stopping_rounds=10, eval_metric="rmse",  random_state=1000003,  n_jobs=-1)
+xgbr = xgb.XGBRegressor(early_stopping_rounds=10, eval_metric="rmse",  random_state=1000003,  n_gpus=-1, tree_method="gpu_hist")
 rscv = RandomizedSearchCV(estimator=xgbr, param_distributions=params_grid,
                           n_iter=300, n_jobs=-1, scoring="neg_mean_squared_error",
                           verbose=1, random_state=1000003)
