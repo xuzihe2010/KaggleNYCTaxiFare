@@ -1,0 +1,122 @@
+Gradient Boosting: Try 1
+(500000, 8)
+start training:  65.78983521461487
+C:\Users\xuzih\AppData\Roaming\Python\Python37\site-packages\sklearn\model_selection\_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Fitting 3 folds for each of 100 candidates, totalling 300 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  26 tasks      | elapsed:  2.0min
+[Parallel(n_jobs=-1)]: Done 176 tasks      | elapsed:  7.0min
+[Parallel(n_jobs=-1)]: Done 300 out of 300 | elapsed: 13.1min finished
+Hyperparameter selection time in minutes:  16.76576780875524
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=1.023292992280754, loss='lad', max_depth=3,
+             max_features='auto', max_leaf_nodes=None,
+             min_impurity_decrease=0.0, min_impurity_split=None,
+             min_samples_leaf=19, min_samples_split=2,
+             min_weight_fraction_leaf=0.0, n_estimators=800,
+             n_iter_no_change=5, presort='auto', random_state=1000003,
+             subsample=0.9, tol=0.0001, validation_fraction=0.1, verbose=0,
+             warm_start=False)
+{'subsample': 0.9, 'n_estimators': 800, 'min_samples_split': 2, 'min_samples_leaf': 19, 'max_features': 'auto', 'max_depth': 3, 'loss': 'lad', 'learning_rate': 1.023292992280754}
+
+Gradient Boosting: Try 2
+(500000, 8)
+start training:  70.17380738258362
+C:\Users\xuzih\AppData\Roaming\Python\Python37\site-packages\sklearn\model_selection\_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Fitting 3 folds for each of 100 candidates, totalling 300 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  26 tasks      | elapsed:  4.7min
+[Parallel(n_jobs=-1)]: Done 176 tasks      | elapsed: 49.7min
+[Parallel(n_jobs=-1)]: Done 300 out of 300 | elapsed: 754.4min finished
+Hyperparameter selection time in minutes:  765.5811152418454
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.2, loss='huber', max_depth=7,
+             max_features=0.7000000000000001, max_leaf_nodes=None,
+             min_impurity_decrease=0.0, min_impurity_split=None,
+             min_samples_leaf=3, min_samples_split=6,
+             min_weight_fraction_leaf=0.0, n_estimators=700,
+             n_iter_no_change=5, presort='auto', random_state=1000003,
+             subsample=0.7000000000000001, tol=0.0001,
+             validation_fraction=0.1, verbose=0, warm_start=False)
+{'subsample': 0.7000000000000001, 'n_estimators': 700, 'min_samples_split': 6, 'min_samples_leaf': 3, 'max_features': 0.7000000000000001, 'max_depth': 7, 'loss': 'huber', 'learning_rate': 0.2}
+
+Gradient Boosting: Try 3
+(1000000, 8)
+start training:  129.89739346504211
+C:\Users\xuzih\AppData\Roaming\Python\Python37\site-packages\sklearn\model_selection\_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  26 tasks      | elapsed: 12.3min
+[Parallel(n_jobs=-1)]: Done 176 tasks      | elapsed: 148.3min
+[Parallel(n_jobs=-1)]: Done 300 out of 300 | elapsed: 265.1min finished
+Hyperparameter selection time in minutes:  289.5946760336558
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.2, loss='huber', max_depth=7,
+             max_features=0.7000000000000001, max_leaf_nodes=None,
+             min_impurity_decrease=0.0, min_impurity_split=None,
+             min_samples_leaf=3, min_samples_split=6,
+             min_weight_fraction_leaf=0.0, n_estimators=700,
+             n_iter_no_change=5, presort='auto', random_state=1000003,
+             subsample=0.7000000000000001, tol=0.0001,
+             validation_fraction=0.1, verbose=0, warm_start=False)
+{'subsample': 0.7000000000000001, 'n_estimators': 700, 'min_samples_split': 6, 'min_samples_leaf': 3, 'max_features': 0.7000000000000001, 'max_depth': 7, 'loss': 'huber', 'learning_rate': 0.2}
+
+Gradient Boosting: Try 4
+C:\Users\xuzih\AppData\Local\Programs\Python\Python37\python.exe C:/Users/xuzih/PycharmProjects/KaggleNYCTaxiFare/main_kernel.py
+['map', 'nyc_-74.3_-73.7_40.5_40.9.png', 'nyc_-74.5_-72.8_40.5_41.8.png', 'test.csv', 'train.csv']
+(500000, 8)
+(487628, 27)
+(485885, 27)
+start training:  61.51452088356018
+C:\Users\xuzih\AppData\Roaming\Python\Python37\site-packages\sklearn\model_selection\_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Fitting 3 folds for each of 100 candidates, totalling 300 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  26 tasks      | elapsed:  4.0min
+[Parallel(n_jobs=-1)]: Done 176 tasks      | elapsed: 44.6min
+[Parallel(n_jobs=-1)]: Done 300 out of 300 | elapsed: 83.6min finished
+Hyperparameter selection time in minutes:  88.21003466447195
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+             learning_rate=0.2, loss='huber', max_depth=7,
+             max_features=0.7000000000000001, max_leaf_nodes=None,
+             min_impurity_decrease=0.0, min_impurity_split=None,
+             min_samples_leaf=3, min_samples_split=6,
+             min_weight_fraction_leaf=0.0, n_estimators=700,
+             n_iter_no_change=5, presort='auto', random_state=1000003,
+             subsample=0.7000000000000001, tol=0.0001,
+             validation_fraction=0.1, verbose=0, warm_start=False)
+{'subsample': 0.7000000000000001, 'n_estimators': 700, 'min_samples_split': 6, 'min_samples_leaf': 3, 'max_features': 0.7000000000000001, 'max_depth': 7, 'loss': 'huber', 'learning_rate': 0.2}
+
+XGBoosting: Try 1
+['map', 'nyc_-74.3_-73.7_40.5_40.9.png', 'nyc_-74.5_-72.8_40.5_41.8.png', 'test.csv', 'train.csv']
+(485598, 27)
+start training:  64.30012249946594
+C:\Users\xuzih\AppData\Roaming\Python\Python37\site-packages\sklearn\model_selection\_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Fitting 3 folds for each of 100 candidates, totalling 300 fits
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  26 tasks      | elapsed: 14.1min
+[Parallel(n_jobs=-1)]: Done 176 tasks      | elapsed: 82.9min
+[Parallel(n_jobs=-1)]: Done 300 out of 300 | elapsed: 173.0min finished
+Hyperparameter selection time in minutes:  173.28103546301523
+XGBRegressor(alpha=0, base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, early_stopping_rounds=5, eta=1.0,
+       eval_metric='rmse',
+       eval_set=[(                                  key    ...      frac_year
+269254    2011-08-06 15:45:34.0000001    ...       0.596320
+308672  2009-04-15 14:26:00.000000172    ...       0.286579
+468777  2013-03-06 19:18:00.000000119    ...       0.177546
+99942     2010-04-19 11:47:23.0000004    ...     ...4.5
+485822     4.9
+100537     9.5
+87721      7.8
+Name: fare_amount, Length: 485598, dtype: float64)],
+       gamma=0, lambda=3, learning_rate=0.1, max_delta_step=3, max_depth=7,
+       min_child_weight=1, min_split_loss=4, missing=None,
+       n_estimators=100, n_jobs=1, nthread=12, objective='reg:linear',
+       predictor='gpu_predictor', random_state=0, reg_alpha=0,
+       reg_lambda=1, scale_pos_weight=1, seed=1000003, silent=True,
+       subsample=0.9)
+{'subsample': 0.9, 'n_estimators': 100, 'min_split_loss': 4, 'max_depth': 7, 'max_delta_step': 3, 'lambda': 3, 'eta': 1.0, 'alpha': 0}
