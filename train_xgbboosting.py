@@ -26,6 +26,7 @@ xgbr.fit(X_train[helper_functions.FEATURE_COLS], y_train)
 end = time.time()
 print("Train xgboost model takes: ", (end - start) / 60, "mins")
 
+
 preds = xgbr.predict(data_test[helper_functions.FEATURE_COLS])
 sub = pd.DataFrame({'key': list(data_test.key), 'fare_amount': preds})
 sub.to_csv('C:/Users/xuzih/Kaggle Data/NYC Taxi Fare/xgboost_pred_sub.csv', index=False)
