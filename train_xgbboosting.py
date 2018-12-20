@@ -16,8 +16,6 @@ X_train, X_valid, y_train, y_valid = train_test_split(data_raw, data_raw.fare_am
                                                       test_size=0.2, random_state=1000003)
 del data_raw
 
-
-
 # Randomized searched params:
 start = time.time()
 eval_set = [((X_valid[helper_functions.FEATURE_COLS], y_valid))]
